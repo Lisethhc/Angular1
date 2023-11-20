@@ -11,11 +11,11 @@ const routes: Routes = [
     component: WorldComponent,
   },
   {
-    path: '',
+    path: 'list',
     component: TaskListComponent,
   },
   {
-    path: 'rick',
+    path: '',
     component: RickComponent
   },
   {

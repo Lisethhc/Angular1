@@ -10,20 +10,23 @@ import { HttpClientModule } from '@angular/common/http'
 import { ObservableService } from './services/observable.service';
 import { ObservableComponent } from './components/observable/observable.component';
 import { RickService } from './services/rick.service';
-
+import { MaterialModule } from '../material/material.module';
+import { DialogoComponent } from './components/dialogo/dialogo.component';
 
 @NgModule({
   declarations: [
     WorldComponent,
     TaskListComponent,
     RickComponent,
-    ObservableComponent
+    ObservableComponent,
+    DialogoComponent
   ],
   imports: [
     CommonModule,
     HelloRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
   providers: [RickService, ObservableService]
 })
